@@ -3,6 +3,8 @@ const membersContainer = document.querySelector("#membersContainer");
 const gridButton = document.querySelector("#gridView");
 const listButton = document.querySelector("#listView");
 
+let currentView = "grid";
+
 async function loadMembers() {
     try {
         const response = await fetch(membersUrl);
@@ -25,12 +27,15 @@ function displayMembers(members) {
         const card = document.createElement("article");
         card.classList.add("member-card");
 
-        const img = document.createElement("img");
-        img.src = `images/${member.image}`;
-        img.alt = member.name;
-        img.loading = "lazy";
-        img.width = 120;
-        img.height = 120;
+        if (currentView === "grid") {
+            const img = document.createElement("img");
+            img.src = `images/${member.image}`;
+            img.alt = member.name;
+            img.loading = "lazy";
+            img.width = 120;
+            img.height = 120;
+            card.appendChild(img);
+        }
 
         const info = document.createElement("div");
         info.classList.add("member-info");
@@ -73,7 +78,6 @@ function displayMembers(members) {
         info.appendChild(url);
         info.appendChild(badge);
 
-        card.appendChild(img);
         card.appendChild(info);
         membersContainer.appendChild(card);
     });
@@ -81,18 +85,24 @@ function displayMembers(members) {
 
 function setGridView() {
     if (!membersContainer) return;
+    currentView = "grid";
     membersContainer.classList.add("grid");
     membersContainer.classList.remove("list");
     gridButton.classList.add("active");
     listButton.classList.remove("active");
+
+    loadMembers();
 }
 
 function setListView() {
     if (!membersContainer) return;
+    currentView = "list";
     membersContainer.classList.add("list");
     membersContainer.classList.remove("grid");
     listButton.classList.add("active");
     gridButton.classList.remove("active");
+
+    loadMembers();
 }
 
 if (gridButton && listButton) {
