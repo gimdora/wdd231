@@ -1,0 +1,81 @@
+@media only screen and (min-width: 48rem) {
+    .top-bar {
+        padding-inline: 2rem;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .site-nav {
+        background-color: var(--surface);
+        border-top: 1px solid var(--border-soft);
+    }
+
+    .site-nav ul {
+        max-width: 72rem;
+        margin: 0 auto;
+        padding: 0.25rem 2rem;
+        display: flex;
+        flex-direction: row;
+        gap: 0.25rem;
+    }
+
+    .site-nav a {
+        color: var(--text-main);
+        border-radius: 999px;
+        padding-inline: 0.85rem;
+    }
+
+    .site-nav a:hover,
+    .site-nav a:focus-visible,
+    .site-nav a[aria-current="page"] {
+        background-color: var(--accent-soft);
+    }
+
+    .directory-main {
+        padding-inline: 2rem;
+    }
+
+    .members.grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .member-card {
+        grid-template-columns: 1fr;
+    }
+
+    .site-footer {
+        padding-inline: 2rem;
+    }
+
+    .site-footer-inner {
+        max-width: 72rem;
+    }
+
+    .footer-contact,
+    .footer-social,
+    .footer-meta {
+        max-width: 72rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-contact {
+        flex-direction: row;
+    }
+
+    .footer-contact p {
+        margin-left: 1.5rem;
+    }
+
+    .footer-social {
+        justify-content: flex-start;
+    }
+
+    .footer-meta {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+}

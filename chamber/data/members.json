@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Han River Outdoor Co.",
+            "tagline": "Gear and tours for city adventures",
+            "address": "Mapo-gu, Seoul, Republic of Korea",
+            "phone": "+82 2-323-1331",
+            "website": "https://hanriveroutdoor.example.com",
+            "image": "han-river-outdoor.jpg",
+            "membership": 3
+        },
+        {
+            "name": "Gangnam Tech Studio",
+            "tagline": "Product design and web development",
+            "address": "Gangnam-gu, Seoul, Republic of Korea",
+            "phone": "+82 2-927-8752",
+            "website": "https://gangnamtech.example.com",
+            "image": "gangnam-tech-studio.jpg",
+            "membership": 3
+        },
+        {
+            "name": "Jongno Heritage Crafts",
+            "tagline": "Traditional crafts and workshops",
+            "address": "Jongno-gu, Seoul, Republic of Korea",
+            "phone": "+82 2-155-1953",
+            "website": "https://jongnocrafts.example.com",
+            "image": "jongno-heritage-crafts.jpg",
+            "membership": 2
+        },
+        {
+            "name": "Seoul Green Foods",
+            "tagline": "Healthy catering for offices",
+            "address": "Yeongdeungpo-gu, Seoul, Republic of Korea",
+            "phone": "+82 2-333-3844",
+            "website": "https://seoulgreenfoods.example.com",
+            "image": "seoul-green-foods.jpg",
+            "membership": 2
+        },
+        {
+            "name": "Itaewon Language Hub",
+            "tagline": "Language classes and tutoring",
+            "address": "Yongsan-gu, Seoul, Republic of Korea",
+            "phone": "+82 2-561-5077",
+            "website": "https://itaewonlanguagehub.example.com",
+            "image": "itaewon-language-hub.jpg",
+            "membership": 1
+        },
+        {
+            "name": "Seongsu Makers Lab",
+            "tagline": "Prototyping and small-batch manufacturing",
+            "address": "Seongdong-gu, Seoul, Republic of Korea",
+            "phone": "+82 2-864-7723",
+            "website": "https://seongsumakers.example.com",
+            "image": "seongsu-makers-lab.jpg",
+            "membership": 2
+        },
+        {
+            "name": "Bukchon Photo Studio",
+            "tagline": "Portrait and brand photography",
+            "address": "Jongno-gu, Seoul, Republic of Korea",
+            "phone": "+82 2-880-5442",
+            "website": "https://bukchonphoto.example.com",
+            "image": "bukchon-photo-studio.jpg",
+            "membership": 1
+        }
+    ]
+}

@@ -1,0 +1,290 @@
+:root {
+    --bg: #f4f6fb;
+    --surface: #ffffff;
+    --accent: #2c4a7a;
+    --accent-soft: #d8e2f3;
+    --text-main: #111827;
+    --text-muted: #4b5563;
+    --border-soft: #e5e7eb;
+    --gold: #fbbf24;
+    --silver: #9ca3af;
+    --shadow-soft: 0 2px 6px rgba(15, 23, 42, 0.08);
+    --radius: 0.75rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text-main);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+    text-decoration: underline;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.site-header {
+    background-color: var(--surface);
+    border-bottom: 1px solid var(--border-soft);
+    box-shadow: var(--shadow-soft);
+}
+
+.top-bar {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo {
+    border-radius: 999px;
+}
+
+.brand-text {
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.menu-toggle {
+    border: none;
+    background: none;
+    padding: 0.25rem;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    cursor: pointer;
+}
+
+.menu-line {
+    width: 1.5rem;
+    height: 2px;
+    background-color: var(--text-main);
+    border-radius: 999px;
+}
+
+.site-nav {
+    background-color: #111827;
+}
+
+.site-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    flex-direction: column;
+}
+
+.site-nav.open ul {
+    display: flex;
+}
+
+.site-nav a {
+    display: block;
+    padding: 0.9rem 1rem;
+    color: #f9fafb;
+    font-size: 0.95rem;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible,
+.site-nav a[aria-current="page"] {
+    background-color: var(--accent);
+}
+
+.directory-main {
+    max-width: 72rem;
+    margin: 1.25rem auto 2.5rem;
+    padding: 0 1rem;
+}
+
+.directory-main h1 {
+    margin: 0 0 1rem;
+    font-size: 1.8rem;
+}
+
+.view-controls {
+    margin-bottom: 1rem;
+}
+
+.view-buttons {
+    display: inline-flex;
+    border-radius: 999px;
+    background-color: var(--accent-soft);
+    padding: 0.2rem;
+}
+
+.view-btn {
+    border: none;
+    background: transparent;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 999px;
+    cursor: pointer;
+    color: var(--text-muted);
+}
+
+.view-btn.active {
+    background-color: var(--surface);
+    color: var(--accent);
+    box-shadow: var(--shadow-soft);
+}
+
+.members {
+    display: grid;
+    gap: 1rem;
+}
+
+.members.list {
+    grid-template-columns: 1fr;
+}
+
+.members.grid {
+    grid-template-columns: 1fr;
+}
+
+.member-card {
+    background-color: var(--surface);
+    border-radius: var(--radius);
+    padding: 1rem;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--border-soft);
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 0.75rem;
+    align-items: start;
+}
+
+.member-card img {
+    border-radius: 0.5rem;
+    background-color: var(--accent-soft);
+}
+
+.member-info h3 {
+    margin: 0 0 0.25rem;
+    font-size: 1.05rem;
+}
+
+.member-info p {
+    margin: 0.12rem 0;
+    font-size: 0.86rem;
+    color: var(--text-muted);
+}
+
+.member-info a {
+    font-weight: 600;
+    font-size: 0.86rem;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.1rem 0.45rem;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-top: 0.25rem;
+}
+
+.badge.gold {
+    background-color: var(--gold);
+    color: #1f2933;
+}
+
+.badge.silver {
+    background-color: var(--silver);
+    color: #111827;
+}
+
+.badge.standard {
+    background-color: var(--accent-soft);
+    color: var(--accent);
+}
+
+.site-footer {
+    background-color: #111827;
+    color: #e5e7eb;
+    padding: 1.5rem 1rem 2rem;
+    margin-top: 2rem;
+}
+
+.site-footer a {
+    color: #e5e7eb;
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible {
+    text-decoration: underline;
+}
+
+.footer-contact,
+.footer-social,
+.footer-meta {
+    max-width: 72rem;
+    margin: 0 auto 1rem;
+}
+
+.footer-contact h2 {
+    margin: 0 0 0.25rem;
+    font-size: 1rem;
+}
+
+.footer-contact p {
+    margin: 0.12rem 0;
+    font-size: 0.85rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+}
+
+.footer-meta {
+    font-size: 0.8rem;
+}
+
+.footer-meta p {
+    margin: 0.12rem 0;
+}
