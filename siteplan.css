@@ -1,0 +1,134 @@
+:root {
+    --primary: #0f2a43;
+    --accent: #2b7bbb;
+    --surface: #f4f6f8;
+    --text: #101418;
+    --muted: rgba(16, 20, 24, 0.7);
+    --card: #ffffff;
+    --border: rgba(16, 20, 24, 0.12);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: var(--text);
+    background: var(--surface);
+    line-height: 1.5;
+}
+
+.page-header {
+    background: var(--primary);
+    color: #fff;
+    padding: 1.25rem 1rem;
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.subtitle {
+    margin: 0.35rem 0 0;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 400;
+}
+
+.content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.card h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.card h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.05rem;
+    font-weight: 800;
+}
+
+.card p {
+    margin: 0.5rem 0;
+}
+
+.card ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1.2rem;
+}
+
+.note {
+    color: var(--muted);
+}
+
+.swatches {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.swatch {
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    gap: 0.75rem;
+    align-items: center;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: #fff;
+}
+
+.chip {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+}
+
+.chip-primary {
+    background: var(--primary);
+}
+
+.chip-accent {
+    background: var(--accent);
+}
+
+.chip-surface {
+    background: var(--surface);
+}
+
+.wire {
+    margin: 0.5rem 0 0;
+    border: 1px dashed var(--border);
+    border-radius: 12px;
+    background: #fff;
+    overflow: auto;
+}
+
+.wire pre {
+    margin: 0;
+    padding: 0.75rem;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+
+.page-footer {
+    padding: 1rem;
+    text-align: center;
+    color: var(--muted);
+}

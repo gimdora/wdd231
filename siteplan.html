@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Site Plan | Seoul Walks Planner</title>
+    <meta name="description" content="Site plan document for the Seoul Walks Planner individual website project.">
+    <meta name="author" content="Heewoong Kim">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="siteplan.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <h1>Seoul Walks Planner — Site Plan</h1>
+        <p class="subtitle">W05 Individual Project Site Plan (living document)</p>
+    </header>
+
+    <main class="content">
+        <section class="card" id="sitename">
+            <h2>Site Name</h2>
+            <p><strong>Seoul Walks Planner</strong></p>
+            <p>
+                I chose this name because it clearly communicates the purpose: planning walking routes in Seoul.
+                The name is short, memorable, and works well for branding.
+            </p>
+            <p><strong>Optional domain idea:</strong> seoul-walks.example</p>
+        </section>
+
+        <section class="card" id="purpose">
+            <h2>Site Purpose</h2>
+            <p>
+                The site helps users discover and compare walking routes in Seoul. It provides route information
+                (distance, time, difficulty, nearby subway, tags) and allows users to view details in a modal and
+                save favorite routes using local storage.
+            </p>
+            <p>
+                The site will also display weather information to support planning like current conditions and a short
+                forecast.
+                using a public API, and it will generate route cards dynamically from a JSON data source.
+            </p>
+        </section>
+
+        <section class="card" id="scenarios">
+            <h2>Scenarios</h2>
+            <ul>
+                <li>“I only have 45 minutes today. Which route near me is short and easy?”</li>
+                <li>“What walk is best for a night view, and how do I get there by subway?”</li>
+                <li>“It looks cold today. Which route is mostly sheltered or has indoor nearby spots?”</li>
+                <li>“How can I save my favorite routes and open them quickly later?”</li>
+            </ul>
+        </section>
+
+        <section class="card" id="colors">
+            <h2>Color Scheme</h2>
+            <div class="swatches">
+                <div class="swatch">
+                    <div class="chip chip-primary" aria-hidden="true"></div>
+                    <div>
+                        <p><strong>Primary:</strong> #0F2A43 (Deep Navy)</p>
+                        <p>Used for header background, key buttons, and important headings.</p>
+                    </div>
+                </div>
+
+                <div class="swatch">
+                    <div class="chip chip-accent" aria-hidden="true"></div>
+                    <div>
+                        <p><strong>Accent:</strong> #2B7BBB (Sky Blue)</p>
+                        <p>Used for links, highlights, focus styles, and small UI accents.</p>
+                    </div>
+                </div>
+
+                <div class="swatch">
+                    <div class="chip chip-surface" aria-hidden="true"></div>
+                    <div>
+                        <p><strong>Surface:</strong> #F4F6F8 (Light Gray)</p>
+                        <p>Used as page background and card surfaces to keep content readable.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card" id="typography">
+            <h2>Typography</h2>
+            <p><strong>Font:</strong> Inter (Google Fonts)</p>
+            <ul>
+                <li><strong>Headings (h1–h3):</strong> Inter 800/600 for strong hierarchy and clarity.</li>
+                <li><strong>Body text:</strong> Inter 400 for comfortable reading.</li>
+                <li><strong>UI labels/buttons:</strong> Inter 600 for emphasis.</li>
+            </ul>
+        </section>
+
+        <section class="card" id="wireframe">
+            <h2>Wireframe</h2>
+
+            <h3>Mobile (Home)</h3>
+            <figure class="wire">
+                <pre aria-label="Mobile wireframe sketch">
+[Header: Logo + Menu]
+[Hero: Big image + CTA]
+[Weather summary]
+[Featured routes (3 cards)]
+[Footer]
+        </pre>
+            </figure>
+
+            <h3>Desktop/Tablet (Home)</h3>
+            <figure class="wire">
+                <pre aria-label="Desktop wireframe sketch">
+[Header: Logo | Nav links horizontally]
+[Hero image + CTA aligned]
+[Row: Weather | Featured route of the day]
+[Grid: Route cards (3–6)]
+[Footer: Links + Attributions + Video link]
+        </pre>
+            </figure>
+
+            <p class="note">
+                Planned pages (3 total): Home (index.html), Routes (listing + filters), Favorites/Plan (saved routes +
+                simple planning form).
+            </p>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <p>WDD 231 • Heewoong Kim</p>
+    </footer>
+</body>
+
+</html>
