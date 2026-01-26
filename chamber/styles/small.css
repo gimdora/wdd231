@@ -377,30 +377,3 @@ a:focus-visible {
     object-fit: cover;
     border-radius: 0.5rem;
 }
-
-.badge {
-    display: inline-block;
-    margin-top: 0.5rem;
-    padding: 0.25rem 0.5rem;
-    border-radius: 999px;
-    font-weight: 700;
-}
-
-.badge.gold {
-    background: #f5e6a6;
-}
-
-.badge.silver {
-    background: #e3e3e3;
-}
-
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-}
