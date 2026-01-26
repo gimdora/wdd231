@@ -4,18 +4,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Business Directory | Seoul Chamber of Commerce</title>
+    <title>Seoul Chamber of Commerce | Home</title>
     <meta name="description"
-        content="Business directory for the Seoul Chamber of Commerce. Discover member organizations, services, and partners in Seoul.">
+        content="Seoul Chamber of Commerce student project: events, weather, and member spotlights.">
     <meta name="author" content="Heewoong Kim">
 
-    <link rel="icon" href="images/favicon.ico">
-
-    <meta property="og:title" content="Seoul Chamber of Commerce Directory">
-    <meta property="og:description" content="Explore member businesses of the Seoul Chamber of Commerce.">
-    <meta property="og:image" content="https://gimdora.github.io/wdd231/chamber/images/social-card.png">
-    <meta property="og:url" content="https://gimdora.github.io/wdd231/chamber/directory.html">
+    <meta property="og:title" content="Seoul Chamber of Commerce">
+    <meta property="og:description"
+        content="Student project chamber site for Seoul: events, weather, and member spotlights.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gimdora.github.io/wdd231/chamber/">
+    <meta property="og:image" content="https://gimdora.github.io/wdd231/chamber/images/social-card.png">
+
+    <link rel="icon" href="images/favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +28,7 @@
 
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/dates.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/home.js" defer></script>
 </head>
 
 <body>
@@ -48,33 +49,58 @@
 
         <nav id="primaryNav" class="site-nav" aria-label="Main">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html" aria-current="page">Business Directory</a></li>
+                <li><a href="directory.html">Business Directory</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="directory-main">
-        <h1>Business Directory</h1>
-
-        <section class="view-controls">
-            <h2 class="sr-only">View options</h2>
-            <div class="view-buttons" role="group" aria-label="Directory view">
-                <button id="gridView" class="view-btn active" type="button">Grid</button>
-                <button id="listView" class="view-btn" type="button">List</button>
-            </div>
+    <main class="home-main">
+        <section class="hero" aria-label="Hero">
+            <img src="images/hero-seoul.webp" alt="Seoul city skyline" width="1200" height="500">
+            <a class="cta" href="join.html">Join the Chamber</a>
         </section>
 
-        <section id="membersContainer" class="members grid" aria-live="polite"></section>
+        <h1 class="page-title">Home</h1>
+
+        <section class="home-panels" aria-label="Highlights">
+            <section class="panel events" aria-label="Current events">
+                <h2>Events</h2>
+                <ul class="event-list">
+                    <li>Startup Networking Night — Feb 7</li>
+                    <li>Small Business Workshop — Feb 12</li>
+                    <li>Local Market Collaboration Meetup — Feb 20</li>
+                </ul>
+            </section>
+
+            <section class="panel weather" aria-label="Current weather">
+                <h2>Current Weather</h2>
+                <div class="weather-now" role="group" aria-label="Weather now">
+                    <p class="weather-temp"><span id="tempNow">--</span>°C</p>
+                    <p class="weather-desc" id="descNow">Loading...</p>
+                    <p class="weather-hint" id="weatherHint"></p>
+                </div>
+            </section>
+
+            <section class="panel forecast" aria-label="Weather forecast">
+                <h2>Weather Forecast</h2>
+                <ul class="forecast-list" id="forecastList"></ul>
+            </section>
+        </section>
+
+        <section class="spotlights-section" aria-label="Company spotlights">
+            <h2>Company Spotlights</h2>
+            <div class="spotlights" id="spotlights"></div>
+        </section>
     </main>
 
     <footer class="site-footer">
         <section class="footer-contact">
             <h2>Seoul Chamber of Commerce</h2>
             <p>110 Sejong-daero<br>Jung-gu, Seoul, Republic of Korea</p>
-            <p>Email: <a href="mailto:infoseoulchamber@gmail.com">infoseoulchamber@gmail.com</a><br>Phone: <a
+            <p>Email: <a href="mailto:infoseoulchamber@gmail.com">infoseoulchamber@gamil.com</a><br>Phone: <a
                     href="tel:+822385225">+82 2-238-5225</a></p>
         </section>
 
