@@ -1,0 +1,245 @@
+.join-main,
+.thankyou-main {
+    max-width: 72rem;
+    margin: 1.25rem auto 2.5rem;
+    padding: 0 1rem;
+}
+
+.join-main h1,
+.thankyou-main h1 {
+    margin: 0 0 1rem;
+    font-size: 1.8rem;
+}
+
+.join-layout {
+    display: grid;
+    gap: 1rem;
+}
+
+.join-form,
+.membership-cards {
+    background-color: var(--surface);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-soft);
+    padding: 1rem;
+}
+
+.application {
+    display: grid;
+    gap: 0.85rem;
+}
+
+.field {
+    display: grid;
+    gap: 0.35rem;
+    font-size: 0.95rem;
+}
+
+.field-label {
+    font-weight: 600;
+}
+
+.req {
+    color: #b91c1c;
+    font-weight: 800;
+}
+
+.field input,
+.field select,
+.field textarea {
+    width: 100%;
+    padding: 0.6rem 0.7rem;
+    border-radius: 0.6rem;
+    border: 1px solid var(--border-soft);
+    background-color: #fff;
+    color: var(--text-main);
+}
+
+.field input:focus-visible,
+.field select:focus-visible,
+.field textarea:focus-visible {
+    outline: 3px solid var(--accent-soft);
+    outline-offset: 2px;
+}
+
+.submit-btn {
+    margin-top: 0.25rem;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 0.6rem;
+    background-color: #111;
+    color: #fff;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.cards-title {
+    margin: 0 0 0.75rem;
+    font-size: 1.1rem;
+}
+
+.cards-grid {
+    display: grid;
+    gap: 0.85rem;
+}
+
+.level-card {
+    border: 1px solid var(--border-soft);
+    border-radius: 0.75rem;
+    padding: 0.9rem;
+    background-color: #fff;
+    transform: translateY(10px);
+    opacity: 0;
+    animation: cardEnter 550ms ease-out forwards;
+}
+
+.level-card:nth-child(2) {
+    animation-delay: 90ms;
+}
+
+.level-card:nth-child(3) {
+    animation-delay: 180ms;
+}
+
+.level-card:nth-child(4) {
+    animation-delay: 270ms;
+}
+
+.level-card h3 {
+    margin: 0 0 0.35rem;
+    font-size: 1.05rem;
+}
+
+.level-price {
+    margin: 0 0 0.35rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.level-summary {
+    margin: 0 0 0.75rem;
+    color: var(--text-muted);
+    font-size: 0.92rem;
+}
+
+.info-link {
+    border: none;
+    border-radius: 999px;
+    padding: 0.45rem 0.85rem;
+    background-color: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.info-link:focus-visible {
+    outline: 3px solid var(--accent-soft);
+    outline-offset: 2px;
+}
+
+@keyframes cardEnter {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.benefits-modal {
+    border: none;
+    border-radius: 0.9rem;
+    padding: 0;
+    max-width: 42rem;
+    width: calc(100% - 2rem);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.benefits-modal::backdrop {
+    background: rgba(15, 23, 42, 0.55);
+}
+
+.modal-inner {
+    padding: 1rem 1rem 1.25rem;
+    background: #fff;
+}
+
+.modal-inner h2 {
+    margin: 0 0 0.75rem;
+    font-size: 1.25rem;
+}
+
+.benefits-list {
+    margin: 0 0 1rem;
+    padding-left: 1.25rem;
+}
+
+.modal-close {
+    border: none;
+    border-radius: 0.6rem;
+    padding: 0.6rem 0.85rem;
+    background-color: #111;
+    color: #fff;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.thankyou-card {
+    background-color: var(--surface);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-soft);
+    padding: 1rem;
+}
+
+.thankyou-lead {
+    margin: 0 0 1rem;
+    color: var(--text-muted);
+}
+
+.submitted {
+    margin: 0.75rem 0 1rem;
+    display: grid;
+    gap: 0.6rem;
+}
+
+.submitted .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+    padding: 0.65rem 0.75rem;
+    border: 1px solid var(--border-soft);
+    border-radius: 0.75rem;
+    background: #fff;
+}
+
+.submitted dt {
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+.submitted dd {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.back-link {
+    display: inline-flex;
+    padding: 0.55rem 0.9rem;
+    border-radius: 0.6rem;
+    background-color: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 800;
+}
+
+.back-link:focus-visible {
+    outline: 3px solid var(--accent-soft);
+    outline-offset: 2px;
+}
+
+@media (min-width: 48rem) {
+    .join-layout {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
+}

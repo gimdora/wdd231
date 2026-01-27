@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thank You | Seoul Chamber of Commerce</title>
+    <meta name="description"
+        content="Thank you for submitting your chamber membership application. Review your submitted details.">
+    <meta name="author" content="Heewoong Kim">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="top-bar">
+            <a href="index.html" class="brand">
+                <img src="images/logo.svg" alt="Seoul Chamber of Commerce logo" class="logo" width="40" height="40">
+                <span class="brand-text">Seoul Chamber of Commerce</span>
+            </a>
+
+            <button id="menuButton" class="menu-toggle" type="button" aria-label="Toggle navigation"
+                aria-controls="primaryNav" aria-expanded="false">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+        </div>
+
+        <nav id="primaryNav" class="site-nav" aria-label="Main">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Business Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="thankyou-main">
+        <h1>Thank You</h1>
+
+        <section class="thankyou-card" aria-label="Submitted application details">
+            <p class="thankyou-lead">We appreciate your interest in joining the Seoul Chamber of Commerce.</p>
+
+            <h2>Your Submitted Information</h2>
+
+            <dl class="submitted">
+                <div class="row">
+                    <dt>First Name</dt>
+                    <dd id="outFirstName"></dd>
+                </div>
+                <div class="row">
+                    <dt>Last Name</dt>
+                    <dd id="outLastName"></dd>
+                </div>
+                <div class="row">
+                    <dt>Email</dt>
+                    <dd id="outEmail"></dd>
+                </div>
+                <div class="row">
+                    <dt>Mobile</dt>
+                    <dd id="outMobile"></dd>
+                </div>
+                <div class="row">
+                    <dt>Business / Organization</dt>
+                    <dd id="outOrganization"></dd>
+                </div>
+                <div class="row">
+                    <dt>Submitted At</dt>
+                    <dd id="outTimestamp"></dd>
+                </div>
+            </dl>
+
+            <a class="back-link" href="index.html">Return to Home</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <section class="footer-contact">
+            <h2>Seoul Chamber of Commerce</h2>
+            <p>110 Sejong-daero<br>Jung-gu, Seoul, Republic of Korea</p>
+            <p>Email: <a href="mailto:info@seoulchamber.example">info@seoulchamber.example</a><br>Phone: <a
+                    href="tel:+82200000000">+82 2-0000-0000</a></p>
+        </section>
+
+        <nav class="footer-social" aria-label="Social media">
+            <a href="https://github.com/gimdora" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer">X</a>
+        </nav>
+
+        <section class="footer-meta">
+            <p>WDD 231 • Heewoong Kim</p>
+            <p>&copy; <span id="currentyear"></span> Seoul Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </section>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Join | Seoul Chamber of Commerce</title>
+    <meta name="description"
+        content="Apply to join the Seoul Chamber of Commerce. Choose a membership level and submit your membership application.">
+    <meta name="author" content="Heewoong Kim">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Join the Seoul Chamber of Commerce">
+    <meta property="og:description" content="Membership application form and membership level benefits.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="top-bar">
+            <a href="index.html" class="brand">
+                <img src="images/logo.svg" alt="Seoul Chamber of Commerce logo" class="logo" width="40" height="40">
+                <span class="brand-text">Seoul Chamber of Commerce</span>
+            </a>
+
+            <button id="menuButton" class="menu-toggle" type="button" aria-label="Toggle navigation"
+                aria-controls="primaryNav" aria-expanded="false">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+        </div>
+
+        <nav id="primaryNav" class="site-nav" aria-label="Main">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Business Directory</a></li>
+                <li><a href="join.html" aria-current="page">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="join-main">
+        <h1>Chamber Membership Application</h1>
+
+        <section class="join-layout" aria-label="Membership application">
+            <section class="join-form" aria-label="Application form">
+                <h2 class="sr-only">Application form</h2>
+
+                <form class="application" method="get" action="thankyou.html">
+                    <label class="field">
+                        <span class="field-label">First Name <span class="req" aria-hidden="true">*</span></span>
+                        <input type="text" name="firstName" id="firstName" required autocomplete="given-name"
+                            title="Enter your first name">
+                    </label>
+
+                    <label class="field">
+                        <span class="field-label">Last Name <span class="req" aria-hidden="true">*</span></span>
+                        <input type="text" name="lastName" id="lastName" required autocomplete="family-name"
+                            title="Enter your last name">
+                    </label>
+
+                    <label class="field">
+                        <span class="field-label">Organization Title</span>
+                        <input type="text" name="orgTitle" id="orgTitle" autocomplete="organization-title"
+                            pattern="^[A-Za-z\- ]{7,}$"
+                            title="Only letters, hyphens, and spaces. Minimum 7 characters.">
+                    </label>
+
+                    <label class="field">
+                        <span class="field-label">Email <span class="req" aria-hidden="true">*</span></span>
+                        <input type="email" name="email" id="email" required autocomplete="email"
+                            placeholder="name@example.com" title="Enter a valid email address">
+                    </label>
+
+                    <label class="field">
+                        <span class="field-label">Mobile Phone <span class="req" aria-hidden="true">*</span></span>
+                        <input type="tel" name="mobile" id="mobile" required autocomplete="tel"
+                            title="Enter your mobile phone number">
+                    </label>
+
+                    <label class="field">
+                        <span class="field-label">Business / Organization Name <span class="req"
+                                aria-hidden="true">*</span></span>
+                        <input type="text" name="organization" id="organization" required autocomplete="organization"
+                            title="Enter your business or organization name">
+                    </label>
+
+                    <label class="field">
+                        <span class="field-label">Membership Level</span>
+                        <select name="membership" id="membership" required title="Select a membership level">
+                            <option value="" selected disabled>Select a level</option>
+                            <option value="np">NP Membership (Nonprofit, no fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label class="field">
+                        <span class="field-label">Business / Organization Description</span>
+                        <textarea name="description" id="description" rows="4"
+                            title="Write a short description of your organization"></textarea>
+                    </label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <input class="submit-btn" type="submit" value="Submit Application">
+                </form>
+            </section>
+
+            <aside class="membership-cards" aria-label="Membership level benefits">
+                <h2 class="cards-title">Membership Levels</h2>
+
+                <div class="cards-grid">
+                    <article class="level-card">
+                        <h3>NP Membership</h3>
+                        <p class="level-price">No fee</p>
+                        <p class="level-summary">For nonprofit organizations.</p>
+                        <button class="info-link" type="button" data-modal="modal-np">View benefits</button>
+                    </article>
+
+                    <article class="level-card">
+                        <h3>Bronze Membership</h3>
+                        <p class="level-price">Entry level</p>
+                        <p class="level-summary">Basic visibility and networking.</p>
+                        <button class="info-link" type="button" data-modal="modal-bronze">View benefits</button>
+                    </article>
+
+                    <article class="level-card">
+                        <h3>Silver Membership</h3>
+                        <p class="level-price">Advanced</p>
+                        <p class="level-summary">Training perks and discounts.</p>
+                        <button class="info-link" type="button" data-modal="modal-silver">View benefits</button>
+                    </article>
+
+                    <article class="level-card">
+                        <h3>Gold Membership</h3>
+                        <p class="level-price">Premium</p>
+                        <p class="level-summary">Top placement and full perks.</p>
+                        <button class="info-link" type="button" data-modal="modal-gold">View benefits</button>
+                    </article>
+                </div>
+            </aside>
+        </section>
+
+        <dialog class="benefits-modal" id="modal-np" aria-label="NP Membership benefits">
+            <div class="modal-inner">
+                <h2>NP Membership Benefits</h2>
+                <ul class="benefits-list">
+                    <li>Member listing in the directory</li>
+                    <li>Access to community networking events</li>
+                    <li>Nonprofit spotlight eligibility (limited)</li>
+                    <li>Monthly newsletter and announcements</li>
+                </ul>
+                <button class="modal-close" type="button" data-close>Close</button>
+            </div>
+        </dialog>
+
+        <dialog class="benefits-modal" id="modal-bronze" aria-label="Bronze Membership benefits">
+            <div class="modal-inner">
+                <h2>Bronze Membership Benefits</h2>
+                <ul class="benefits-list">
+                    <li>Enhanced directory listing</li>
+                    <li>Invitations to member-only mixers</li>
+                    <li>Basic event discounts</li>
+                    <li>Quarterly training sessions (1 seat)</li>
+                </ul>
+                <button class="modal-close" type="button" data-close>Close</button>
+            </div>
+        </dialog>
+
+        <dialog class="benefits-modal" id="modal-silver" aria-label="Silver Membership benefits">
+            <div class="modal-inner">
+                <h2>Silver Membership Benefits</h2>
+                <ul class="benefits-list">
+                    <li>Priority directory placement</li>
+                    <li>Event discounts (standard)</li>
+                    <li>Training sessions (2 seats)</li>
+                    <li>Promotion opportunities in newsletters</li>
+                </ul>
+                <button class="modal-close" type="button" data-close>Close</button>
+            </div>
+        </dialog>
+
+        <dialog class="benefits-modal" id="modal-gold" aria-label="Gold Membership benefits">
+            <div class="modal-inner">
+                <h2>Gold Membership Benefits</h2>
+                <ul class="benefits-list">
+                    <li>Top directory placement</li>
+                    <li>Spotlight placement on the home page (as available)</li>
+                    <li>Maximum event discounts</li>
+                    <li>Training sessions (4 seats) + sponsor recognition</li>
+                </ul>
+                <button class="modal-close" type="button" data-close>Close</button>
+            </div>
+        </dialog>
+    </main>
+
+    <footer class="site-footer">
+        <section class="footer-contact">
+            <h2>Seoul Chamber of Commerce</h2>
+            <p>110 Sejong-daero<br>Jung-gu, Seoul, Republic of Korea</p>
+            <p>Email: <a href="mailto:info@seoulchamber.example">info@seoulchamber.example</a><br>Phone: <a
+                    href="tel:+82200000000">+82 2-0000-0000</a></p>
+        </section>
+
+        <nav class="footer-social" aria-label="Social media">
+            <a href="https://github.com/gimdora" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer">X</a>
+        </nav>
+
+        <section class="footer-meta">
+            <p>WDD 231 • Heewoong Kim</p>
+            <p>&copy; <span id="currentyear"></span> Seoul Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </section>
+    </footer>
+</body>
+
+</html>
