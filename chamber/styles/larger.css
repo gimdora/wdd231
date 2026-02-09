@@ -101,3 +101,74 @@
         max-height: 180px;
     }
 }
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .discover-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "card1 card2"
+            "card3 card3"
+            "card4 card5"
+            "card6 card6"
+            "card7 card8";
+    }
+
+    .discover-card {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "title title"
+            "image desc"
+            "image address"
+            "button button";
+        align-items: start;
+        column-gap: .8rem;
+    }
+
+    .discover-card h2 {
+        grid-area: title;
+    }
+
+    .discover-card figure {
+        grid-area: image;
+    }
+
+    .discover-card p {
+        grid-area: desc;
+    }
+
+    .discover-card address {
+        grid-area: address;
+    }
+
+    .discover-card button {
+        grid-area: button;
+    }
+
+    .discover-card img:hover {
+        transform: scale(1.03);
+        filter: brightness(1.03);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, .16);
+        transition: transform .25s ease, filter .25s ease, box-shadow .25s ease;
+    }
+}
+
+@media (min-width: 1025px) {
+    .discover-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "card1 card1 card2 card3"
+            "card4 card5 card5 card6"
+            "card7 card8 card8 card6";
+    }
+
+    .discover-card {
+        grid-template-rows: auto auto auto 1fr auto;
+    }
+
+    .discover-card img:hover {
+        transform: scale(1.04);
+        filter: contrast(1.04) saturate(1.05);
+        box-shadow: 0 10px 22px rgba(0, 0, 0, .18);
+        transition: transform .25s ease, filter .25s ease, box-shadow .25s ease;
+    }
+}

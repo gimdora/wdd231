@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Discover Seoul | Seoul Chamber of Commerce</title>
+    <meta name="description"
+        content="Discover key places, culture, and business-friendly attractions in Seoul through the Seoul Chamber of Commerce.">
+    <meta name="author" content="Heewoong Kim">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Discover Seoul | Seoul Chamber of Commerce">
+    <meta property="og:description"
+        content="Explore places of interest, local highlights, and visitor information in Seoul.">
+    <meta property="og:image" content="https://gimdora.github.io/wdd231/chamber/images/social-card.png">
+    <meta property="og:url" content="https://gimdora.github.io/wdd231/chamber/discover.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script type="module" src="scripts/discover.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="top-bar">
+            <a href="index.html" class="brand">
+                <img src="images/logo.svg" alt="Seoul Chamber of Commerce logo" class="logo" width="40" height="40">
+                <span class="brand-text">Seoul Chamber of Commerce</span>
+            </a>
+
+            <button id="menuButton" class="menu-toggle" type="button" aria-label="Toggle navigation"
+                aria-controls="primaryNav" aria-expanded="false">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+        </div>
+
+        <nav id="primaryNav" class="site-nav" aria-label="Main">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html" aria-current="page">Discover</a></li>
+                <li><a href="directory.html">Business Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="discover-main">
+        <h1>Discover Seoul</h1>
+
+        <section class="visit-message-wrap" aria-label="Visitor message">
+            <p id="visitMessage" class="visit-message"></p>
+        </section>
+
+        <section id="discoverGrid" class="discover-grid" aria-label="Points of interest in Seoul"></section>
+    </main>
+
+    <footer class="site-footer">
+        <section class="footer-contact">
+            <h2>Seoul Chamber of Commerce</h2>
+            <p>110 Sejong-daero<br>Jung-gu, Seoul, Republic of Korea</p>
+            <p>Email: <a href="mailto:infoseoulchamber@gmail.com">infoseoulchamber@gmail.com</a><br>Phone: <a
+                    href="tel:+822385225">+82 2-238-5225</a></p>
+        </section>
+
+        <nav class="footer-social" aria-label="Social media">
+            <a href="https://github.com/gimdora" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer">X</a>
+        </nav>
+
+        <section class="footer-meta">
+            <p>WDD 231 • Heewoong Kim</p>
+            <p>&copy; <span id="currentyear"></span> Seoul Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </section>
+    </footer>
+</body>
+
+</html>
