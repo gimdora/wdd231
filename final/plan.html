@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seoul Walks Planner | Plan & Contact</title>
+    <meta name="description" content="Save a simple walking plan and send your contact details.">
+    <meta name="author" content="Heewoong Kim">
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Seoul Walks Planner Plan Page">
+    <meta property="og:description" content="Build your walking plan and submit your contact details.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gimdora.github.io/wdd231/final/plan.html">
+    <meta property="og:image" content="https://gimdora.github.io/wdd231/final/images/og-plan.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/plan.js" type="module" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html">
+                <span class="brand-mark" aria-hidden="true">🚶</span>
+                <span class="brand-text">Seoul Walks Planner</span>
+            </a>
+            <button id="menuButton" class="menu-btn" aria-expanded="false" aria-controls="primaryNav"
+                aria-label="Toggle navigation">☰</button>
+        </div>
+        <nav id="primaryNav" class="site-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="routes.html">Routes</a></li>
+                <li><a href="plan.html" aria-current="page">Plan & Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="plan-main">
+        <h1>Plan Your Walk</h1>
+
+        <section class="card">
+            <h2>Your Favorite Routes</h2>
+            <ul id="savedPicks" class="favorites-list"></ul>
+        </section>
+
+        <section class="card">
+            <h2>Contact Form</h2>
+            <form id="planForm" class="plan-form" method="get" action="thanks.html">
+                <label>
+                    First Name
+                    <input type="text" name="firstName" required title="Enter your first name"
+                        autocomplete="given-name">
+                </label>
+
+                <label>
+                    Last Name
+                    <input type="text" name="lastName" required title="Enter your last name" autocomplete="family-name">
+                </label>
+
+                <label>
+                    Email
+                    <input type="email" name="email" required title="Enter your email" autocomplete="email"
+                        placeholder="name@example.com">
+                </label>
+
+                <label>
+                    Preferred Day
+                    <select name="preferredDay" required title="Select your preferred day">
+                        <option value="">Select one</option>
+                        <option>Weekday evening</option>
+                        <option>Saturday morning</option>
+                        <option>Sunday afternoon</option>
+                    </select>
+                </label>
+
+                <label>
+                    Notes
+                    <textarea name="notes" rows="4" title="Write your notes"></textarea>
+                </label>
+
+                <input type="hidden" name="submittedAt" id="submittedAt">
+
+                <input type="submit" value="Submit Plan">
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>WDD 231 • Heewoong Kim</p>
+        <p>© <span id="currentyear"></span> Seoul Walks Planner</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <p><a href="attributions.html">Attributions</a> • <a href="https://비디오" target="_blank"
+                rel="noopener noreferrer">Project Video</a></p>
+    </footer>
+</body>
+
+</html>

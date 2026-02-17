@@ -1,0 +1,244 @@
+{
+    "routes": [
+        {
+            "id": "r01",
+            "name": "Cheonggyecheon Stream Walk",
+            "distanceKm": 4.2,
+            "durationMin": 55,
+            "difficulty": "easy",
+            "station": "Jonggak Station",
+            "tags": [
+                "river",
+                "city",
+                "night-view"
+            ],
+            "image": "route-cheonggyecheon.webp",
+            "summary": "Flat streamside route with bridges, lights, and easy subway access.",
+            "address": "Cheonggyecheon-ro, Jongno-gu, Seoul"
+        },
+        {
+            "id": "r02",
+            "name": "Banpo Hangang Park Loop",
+            "distanceKm": 5.1,
+            "durationMin": 65,
+            "difficulty": "easy",
+            "station": "Express Bus Terminal Station",
+            "tags": [
+                "river",
+                "park",
+                "night-view"
+            ],
+            "image": "route-han-river-banpo.webp",
+            "summary": "Wide riverside paths with sunset and bridge fountain views.",
+            "address": "Banpo-dong, Seocho-gu, Seoul"
+        },
+        {
+            "id": "r03",
+            "name": "Seoul Forest Circuit",
+            "distanceKm": 3.8,
+            "durationMin": 50,
+            "difficulty": "easy",
+            "station": "Seoul Forest Station",
+            "tags": [
+                "park",
+                "forest",
+                "family"
+            ],
+            "image": "route-seoul-forest.webp",
+            "summary": "Tree-lined paths and open lawns, ideal for relaxed walking.",
+            "address": "Ttukseom-ro, Seongdong-gu, Seoul"
+        },
+        {
+            "id": "r04",
+            "name": "Namsan North Loop",
+            "distanceKm": 6.0,
+            "durationMin": 90,
+            "difficulty": "moderate",
+            "station": "Myeong-dong Station",
+            "tags": [
+                "mountain",
+                "night-view",
+                "city"
+            ],
+            "image": "route-namsan-loop.webp",
+            "summary": "Steady uphill segments with panoramic city viewpoints.",
+            "address": "Namsan Park-gil, Yongsan-gu, Seoul"
+        },
+        {
+            "id": "r05",
+            "name": "Bukhansan Entry Trail Walk",
+            "distanceKm": 4.7,
+            "durationMin": 80,
+            "difficulty": "moderate",
+            "station": "Bukhansan Ui Station",
+            "tags": [
+                "forest",
+                "mountain",
+                "nature"
+            ],
+            "image": "route-bukhansan-entry.webp",
+            "summary": "Forest-heavy route near mountain entry areas.",
+            "address": "Ui-dong, Gangbuk-gu, Seoul"
+        },
+        {
+            "id": "r06",
+            "name": "Olympic Park Outer Route",
+            "distanceKm": 5.4,
+            "durationMin": 70,
+            "difficulty": "easy",
+            "station": "Olympic Park Station",
+            "tags": [
+                "park",
+                "history",
+                "open-space"
+            ],
+            "image": "route-olympic-park.webp",
+            "summary": "Large park ring route with broad paths and landmarks.",
+            "address": "Olympic-ro, Songpa-gu, Seoul"
+        },
+        {
+            "id": "r07",
+            "name": "Gyeongui Line Forest Path",
+            "distanceKm": 3.5,
+            "durationMin": 45,
+            "difficulty": "easy",
+            "station": "Hongik Univ. Station",
+            "tags": [
+                "forest",
+                "city",
+                "cafe"
+            ],
+            "image": "route-gyeongui-line.webp",
+            "summary": "Urban linear park route with many rest points.",
+            "address": "Yeonnam-dong area, Mapo-gu, Seoul"
+        },
+        {
+            "id": "r08",
+            "name": "Seokchon Lake Circle",
+            "distanceKm": 2.7,
+            "durationMin": 35,
+            "difficulty": "easy",
+            "station": "Jamsil Station",
+            "tags": [
+                "lake",
+                "park",
+                "night-view"
+            ],
+            "image": "route-seokchon-lake.webp",
+            "summary": "Compact and scenic loop around the lake.",
+            "address": "Samhaksa-ro, Songpa-gu, Seoul"
+        },
+        {
+            "id": "r09",
+            "name": "Yeouido Park to River Link",
+            "distanceKm": 4.9,
+            "durationMin": 60,
+            "difficulty": "easy",
+            "station": "Yeouido Station",
+            "tags": [
+                "park",
+                "river",
+                "city"
+            ],
+            "image": "route-yeouido-park.webp",
+            "summary": "Business district park to riverside transition route.",
+            "address": "Yeouido-dong, Yeongdeungpo-gu, Seoul"
+        },
+        {
+            "id": "r10",
+            "name": "Bukchon & Samcheong Culture Walk",
+            "distanceKm": 3.2,
+            "durationMin": 55,
+            "difficulty": "moderate",
+            "station": "Anguk Station",
+            "tags": [
+                "culture",
+                "history",
+                "city"
+            ],
+            "image": "route-bukchon-samcheong.webp",
+            "summary": "Traditional architecture streets with gentle hills.",
+            "address": "Bukchon-ro, Jongno-gu, Seoul"
+        },
+        {
+            "id": "r11",
+            "name": "Nodeul Island Riverside Path",
+            "distanceKm": 3.1,
+            "durationMin": 40,
+            "difficulty": "easy",
+            "station": "Nodeul Station",
+            "tags": [
+                "river",
+                "park",
+                "music"
+            ],
+            "image": "route-nodeul-island.webp",
+            "summary": "River scenery and open cultural spaces.",
+            "address": "Nodeul-ro, Yongsan-gu, Seoul"
+        },
+        {
+            "id": "r12",
+            "name": "Dongdaemun Wall Segment",
+            "distanceKm": 5.8,
+            "durationMin": 95,
+            "difficulty": "hard",
+            "station": "Dongdaemun Station",
+            "tags": [
+                "history",
+                "night-view",
+                "slope"
+            ],
+            "image": "route-dongdaemun-wall.webp",
+            "summary": "Historic city wall path with steeper elevation changes.",
+            "address": "Naksan-gil area, Jongno-gu, Seoul"
+        },
+        {
+            "id": "r13",
+            "name": "Anyangcheon Greenway (Seoul Section)",
+            "distanceKm": 6.3,
+            "durationMin": 85,
+            "difficulty": "easy",
+            "station": "Guro Station",
+            "tags": [
+                "river",
+                "bike-path",
+                "open-space"
+            ],
+            "image": "route-anyangcheon.webp",
+            "summary": "Long flat greenway, good for steady pace walking.",
+            "address": "Anyangcheon-ro area, Guro-gu, Seoul"
+        },
+        {
+            "id": "r14",
+            "name": "Haneul Park Ridge Walk",
+            "distanceKm": 4.0,
+            "durationMin": 70,
+            "difficulty": "moderate",
+            "station": "World Cup Stadium Station",
+            "tags": [
+                "park",
+                "viewpoint",
+                "grassland"
+            ],
+            "image": "route-haneul-park.webp",
+            "summary": "Elevated park with broad skyline views.",
+            "address": "Haneulgongwon-ro, Mapo-gu, Seoul"
+        },
+        {
+            "id": "r15",
+            "name": "Ikseon-Dong Alley Evening Route",
+            "distanceKm": 5.0,
+            "durationMin": 75,
+            "difficulty": "moderate",
+            "station": "Jongno 3-ga Station",
+            "tags": [
+                "night-view",
+                "city",
+                "river"
+            ],
+            "image": "route-iksundong-alley.webp",
+            "summary": "City streets connecting to calm evening river scenery.",
+            "address": "Jongno 3-ga to Hangang section, Seoul"
+        }
+    ]
+}

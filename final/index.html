@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seoul Walks Planner | Home</title>
+    <meta name="description"
+        content="Plan affordable and practical walking routes in Seoul with weather-aware suggestions and curated route highlights.">
+    <meta name="author" content="Heewoong Kim">
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Seoul Walks Planner">
+    <meta property="og:description"
+        content="Find and compare Seoul walking routes by distance, time, difficulty, and nearby subway.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gimdora.github.io/wdd231/final/index.html">
+    <meta property="og:image" content="https://gimdora.github.io/wdd231/final/images/og-home.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/app.js" type="module" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html">
+                <span class="brand-mark" aria-hidden="true">🚶</span>
+                <span class="brand-text">Seoul Walks Planner</span>
+            </a>
+            <button id="menuButton" class="menu-btn" aria-expanded="false" aria-controls="primaryNav"
+                aria-label="Toggle navigation">☰</button>
+        </div>
+        <nav id="primaryNav" class="site-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="routes.html">Routes</a></li>
+                <li><a href="plan.html">Plan & Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home-main">
+        <section class="hero">
+            <img src="images/hero-seoul.webp" alt="Seoul skyline at sunset" width="1200" height="680"
+                fetchpriority="high">
+            <div class="hero-content">
+                <h1>Walk Seoul Smarter</h1>
+                <p>Pick routes that match your time, energy, and weather.</p>
+                <a class="cta-btn" href="routes.html">Browse Routes</a>
+            </div>
+        </section>
+
+        <section class="home-grid">
+            <article class="card">
+                <h2>Today in Seoul</h2>
+                <p class="muted">Live weather to help you choose the right walk.</p>
+                <p class="weather-line"><strong id="nowTemp">--</strong> <span id="nowDesc">Loading weather...</span>
+                </p>
+                <ul id="miniForecast" class="forecast-list"></ul>
+            </article>
+
+            <article class="card">
+                <h2>Quick Start</h2>
+                <ul class="checklist">
+                    <li>Compare 15+ routes dynamically</li>
+                    <li>Filter by difficulty, tag, and max time</li>
+                    <li>Open modal for details</li>
+                    <li>Save favorites with local storage</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="featured">
+            <div class="section-head">
+                <h2>Featured Routes</h2>
+                <a href="routes.html">See all routes →</a>
+            </div>
+            <div id="featuredRoutes" class="featured-grid" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>WDD 231 • Heewoong Kim</p>
+        <p>© <span id="currentyear"></span> Seoul Walks Planner</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <p><a href="attributions.html">Attributions</a> • <a href="https://비디오" target="_blank"
+                rel="noopener noreferrer">Project Video</a></p>
+    </footer>
+</body>
+
+</html>

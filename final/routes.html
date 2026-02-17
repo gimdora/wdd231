@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seoul Walks Planner | Routes</title>
+    <meta name="description"
+        content="Compare Seoul walking routes by distance, time, difficulty, tags, and subway access. Save your favorites.">
+    <meta name="author" content="Heewoong Kim">
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Seoul Walks Planner Routes">
+    <meta property="og:description"
+        content="Explore route cards with distance, duration, difficulty, station, and tags.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gimdora.github.io/wdd231/final/routes.html">
+    <meta property="og:image" content="https://gimdora.github.io/wdd231/final/images/og-routes.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/routes.js" type="module" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html">
+                <span class="brand-mark" aria-hidden="true">🚶</span>
+                <span class="brand-text">Seoul Walks Planner</span>
+            </a>
+            <button id="menuButton" class="menu-btn" aria-expanded="false" aria-controls="primaryNav"
+                aria-label="Toggle navigation">☰</button>
+        </div>
+        <nav id="primaryNav" class="site-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="routes.html" aria-current="page">Routes</a></li>
+                <li><a href="plan.html">Plan & Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="routes-main">
+        <h1>Route Explorer</h1>
+
+        <section class="toolbar card" aria-label="Route filters">
+            <h2 class="sr-only">Filters</h2>
+            <label>
+                Difficulty
+                <select id="difficultyFilter">
+                    <option value="all">All</option>
+                    <option value="easy">Easy</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </label>
+
+            <label>
+                Max Minutes
+                <select id="timeFilter">
+                    <option value="999">Any</option>
+                    <option value="40">≤ 40</option>
+                    <option value="60">≤ 60</option>
+                    <option value="90">≤ 90</option>
+                </select>
+            </label>
+
+            <label>
+                Tag
+                <select id="tagFilter">
+                    <option value="all">All</option>
+                    <option value="river">River</option>
+                    <option value="park">Park</option>
+                    <option value="night-view">Night View</option>
+                    <option value="culture">Culture</option>
+                    <option value="forest">Forest</option>
+                </select>
+            </label>
+
+            <p id="resultCount" class="muted"></p>
+        </section>
+
+        <section id="routesContainer" class="routes-grid" aria-live="polite"></section>
+
+        <dialog id="routeDialog" class="route-dialog" aria-label="Route details">
+            <article id="dialogContent"></article>
+            <div class="dialog-actions">
+                <button id="closeDialogBtn" type="button">Close</button>
+            </div>
+        </dialog>
+    </main>
+
+    <footer class="site-footer">
+        <p>WDD 231 • Heewoong Kim</p>
+        <p>© <span id="currentyear"></span> Seoul Walks Planner</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <p><a href="attributions.html">Attributions</a> • <a href="https://비디오" target="_blank"
+                rel="noopener noreferrer">Project Video</a></p>
+    </footer>
+</body>
+
+</html>

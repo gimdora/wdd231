@@ -1,0 +1,316 @@
+:root {
+    --primary: #0f2a43;
+    --accent: #2b7bbb;
+    --surface: #f4f6f8;
+    --text: #101418;
+    --muted: #5c6670;
+    --card: #ffffff;
+    --border: #d9dee3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: var(--text);
+    background: var(--surface);
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: var(--accent);
+}
+
+.site-header {
+    background: var(--primary);
+    color: #fff;
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.brand-mark {
+    font-size: 1.2rem;
+}
+
+.menu-btn {
+    border: 1px solid rgba(255, 255, 255, .3);
+    background: transparent;
+    color: #fff;
+    border-radius: 8px;
+    padding: 0.4rem 0.6rem;
+    font-size: 1.1rem;
+}
+
+.site-nav {
+    display: none;
+    border-top: 1px solid rgba(255, 255, 255, .2);
+}
+
+.site-nav.open {
+    display: block;
+}
+
+.site-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+}
+
+.site-nav a[aria-current="page"] {
+    background: rgba(255, 255, 255, .12);
+    font-weight: 700;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.muted {
+    color: var(--muted);
+}
+
+.hero {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.hero img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    background: rgba(15, 42, 67, .75);
+    color: #fff;
+    padding: 0.8rem;
+    border-radius: 10px;
+    max-width: 90%;
+}
+
+.hero-content h1 {
+    margin: 0 0 0.2rem;
+    font-size: 1.4rem;
+}
+
+.hero-content p {
+    margin: 0 0 0.6rem;
+}
+
+.cta-btn {
+    background: #fff;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.45rem 0.8rem;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.home-grid,
+.featured-grid,
+.routes-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 1rem;
+}
+
+.forecast-list,
+.checklist,
+.favorites-list {
+    margin: 0.5rem 0 0;
+    padding-left: 1.2rem;
+}
+
+.route-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.route-card img {
+    aspect-ratio: 3 / 2;
+    width: 100%;
+    object-fit: cover;
+}
+
+.route-body {
+    padding: 0.8rem;
+}
+
+.route-body h3 {
+    margin: 0 0 0.4rem;
+}
+
+.route-meta {
+    display: grid;
+    gap: 0.2rem;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-bottom: 0.6rem;
+}
+
+.tag {
+    font-size: 0.75rem;
+    background: #e8f2fb;
+    color: #184d7a;
+    border-radius: 999px;
+    padding: 0.2rem 0.55rem;
+}
+
+.route-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+button {
+    font: inherit;
+}
+
+.btn {
+    border: 1px solid var(--border);
+    background: #fff;
+    border-radius: 8px;
+    padding: 0.4rem 0.7rem;
+    cursor: pointer;
+}
+
+.btn.primary {
+    background: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+}
+
+.toolbar {
+    display: grid;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.toolbar label {
+    display: grid;
+    gap: 0.25rem;
+    font-weight: 600;
+}
+
+.toolbar select {
+    padding: 0.45rem;
+}
+
+.route-dialog {
+    width: min(640px, 92vw);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.route-dialog::backdrop {
+    background: rgba(0, 0, 0, .45);
+}
+
+.dialog-actions {
+    margin-top: 0.8rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.plan-form {
+    display: grid;
+    gap: 0.8rem;
+}
+
+.plan-form label {
+    display: grid;
+    gap: 0.25rem;
+    font-weight: 600;
+}
+
+.plan-form input,
+.plan-form select,
+.plan-form textarea {
+    padding: 0.5rem;
+}
+
+.site-footer {
+    margin-top: 2rem;
+    background: #0b1e31;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.site-footer a {
+    color: #9fd0ff;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
