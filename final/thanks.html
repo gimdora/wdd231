@@ -5,9 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Seoul Walks Planner | Submission Received</title>
-    <meta name="description" content="Form action page showing submitted contact and planning details.">
+    <meta name="description"
+        content="Thank you for submitting your Seoul walk plan. Review your details and continue exploring routes that match your schedule and preferences.">
     <meta name="author" content="Heewoong Kim">
     <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Seoul Walks Planner | Submission Received">
+    <meta property="og:description"
+        content="Your walk plan was submitted successfully. Check your details and continue exploring Seoul walking routes.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gimdora.github.io/wdd231/final/thanks.html">
+    <meta property="og:image" content="https://gimdora.github.io/wdd231/final/images/og-plan.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +24,8 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 
+    <script src="scripts/nav.js" type="module" defer></script>
+    <script src="scripts/footer.js" type="module" defer></script>
     <script src="scripts/form.js" type="module" defer></script>
 </head>
 
@@ -26,15 +36,48 @@
                 <span class="brand-mark" aria-hidden="true">🚶</span>
                 <span class="brand-text">Seoul Walks Planner</span>
             </a>
+            <button id="menuButton" class="menu-btn" aria-expanded="false" aria-controls="primaryNav"
+                aria-label="Toggle navigation">☰</button>
         </div>
+        <nav id="primaryNav" class="site-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="routes.html">Routes</a></li>
+                <li><a href="plan.html">Plan & Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main class="thanks-main">
         <section class="card">
-            <h1>Thanks for your submission</h1>
-            <p>We received your plan request with the information below.</p>
-            <div id="submittedData"></div>
-            <p><a href="index.html">← Back to Home</a></p>
+            <h1>Thank You</h1>
+            <p>Your walk plan was submitted successfully.</p>
+            <p>We received the following details:</p>
+
+            <dl id="submissionData" class="submission-data">
+                <div>
+                    <dt>First Name</dt>
+                    <dd id="outFirstName">-</dd>
+                </div>
+                <div>
+                    <dt>Last Name</dt>
+                    <dd id="outLastName">-</dd>
+                </div>
+                <div>
+                    <dt>Email</dt>
+                    <dd id="outEmail">-</dd>
+                </div>
+                <div>
+                    <dt>Preferred Day</dt>
+                    <dd id="outPreferredDay">-</dd>
+                </div>
+                <div>
+                    <dt>Submitted At</dt>
+                    <dd id="outSubmittedAt">-</dd>
+                </div>
+            </dl>
+
+            <p><a href="routes.html">Explore routes</a> · <a href="plan.html">Submit another plan</a></p>
         </section>
     </main>
 
@@ -42,6 +85,8 @@
         <p>WDD 231 • Heewoong Kim</p>
         <p>© <span id="currentyear"></span> Seoul Walks Planner</p>
         <p>Last Modified: <span id="lastModified"></span></p>
+        <p><a href="attributions.html">Attributions</a> • <a href="https://비디오" target="_blank"
+                rel="noopener noreferrer">Project Video</a></p>
     </footer>
 </body>
 
