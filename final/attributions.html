@@ -5,22 +5,59 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Attributions | Seoul Walks Planner</title>
-    <meta name="description"
-        content="Attributions for images, data, and external resources used in Seoul Walks Planner.">
+    <meta name="description" content="Attributions for images, APIs, and resources used in Seoul Walks Planner.">
     <meta name="author" content="Heewoong Kim">
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Seoul Walks Planner Attributions">
+    <meta property="og:description"
+        content="Resource credits for photos, data sources, and external tools used in the project.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gimdora.github.io/wdd231/final/attributions.html">
+    <meta property="og:image" content="https://gimdora.github.io/wdd231/final/images/og-home.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/form.js" type="module" defer></script>
 </head>
 
 <body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html">
+                <span class="brand-mark" aria-hidden="true">🚶</span>
+                <span class="brand-text">Seoul Walks Planner</span>
+            </a>
+        </div>
+    </header>
+
     <main>
-        <h1>Attributions</h1>
-        <ul>
-            <li>Weather data: OpenWeather API</li>
-            <li>Route descriptions: student-authored content based on public place information</li>
-            <li>All route and hero images: replace with your selected image sources and credits</li>
-            <li>Icons/emoji: native system emoji</li>
-        </ul>
-        <p><a href="index.html">Back to Home</a></p>
+        <section class="card">
+            <h1>Attributions</h1>
+            <ul>
+                <li>Weather data: OpenWeather API</li>
+                <li>Route data structure and content: student-authored</li>
+                <li>Images: replace each line below with your final source URL and license/credit</li>
+                <li>Hero image source: (add your source)</li>
+                <li>Route images source list: (add your source list)</li>
+                <li>Open Graph images source: (add your source)</li>
+            </ul>
+            <p><a href="index.html">← Back to Home</a></p>
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <p>WDD 231 • Heewoong Kim</p>
+        <p>© <span id="currentyear"></span> Seoul Walks Planner</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <p><a href="attributions.html">Attributions</a> • <a href="https://비디오" target="_blank"
+                rel="noopener noreferrer">Project Video</a></p>
+    </footer>
 </body>
 
 </html>
